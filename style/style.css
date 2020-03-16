@@ -1,0 +1,70 @@
+:root {
+  /* COLORS */
+
+  /* Primary */
+  --soft-red: hsl(0, 93%, 68%);
+  --desaturated-red: hsl(0, 36%, 70%);
+
+  /* Neutral */
+  --dark-grayish-red: hsl(0, 6%, 24%);
+
+  /* Gradients */
+  --primary-gradient: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  --secondary-gradient: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+
+  /* FONTS */
+
+  /* Font Family */
+  --main-font-family: "Josefin Sans", sans-serif;
+
+  /* Font Weights */
+  --light: 300;
+  --regular: 400;
+  --bold: 600;
+}
+
+body {
+  font-family: var(--main-font-family);
+  margin: 0;
+}
+
+header {
+  padding: 10%;
+}
+
+h1 {
+  padding: 10% 10% 0;
+  font-size: 3rem;
+  font-weight: var(--bold);
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: 10px;
+  color: var(--dark-grayish-red);
+  margin: 0;
+}
+
+h1 span {
+  font-weight: var(--light);
+  color: var(--desaturated-red);
+}
+
+p {
+  padding: 10%;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--desaturated-red);
+}
+
+img.showcase {
+  margin: 0;
+}
