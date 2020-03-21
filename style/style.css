@@ -103,3 +103,14 @@ form {
   background: var(--secondary-gradient);
   box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
 }
+
+/*Footer*/
+.attribution {
+  font-weight: var(--light);
+  font-size: 0.9rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--dark-grayish-red);
+  font-weight: var(--regular);
+}
