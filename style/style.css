@@ -72,6 +72,10 @@ img.right-col {
 }
 
 /* Email form */
+input:focus {
+  outline: none;
+}
+
 .form-container {
   text-align: center;
 }
@@ -176,6 +180,7 @@ footer {
     display: inline-block;
     border: solid hsla(0, 36%, 70%, 0.5) 1px;
     border-radius: 5em;
+    width: 380px;
   }
 
   .email {
@@ -191,11 +196,11 @@ footer {
     color: var(--desaturated-red);
     opacity: 0.5;
   }
-
   .email-btn {
     vertical-align: middle;
-    height: 35px;
-    width: 50px;
+    height: 40px;
+    width: 70px;
+    margin-left: 94.9px;
     border-radius: 5em;
     border: none;
     background: var(--secondary-gradient);
