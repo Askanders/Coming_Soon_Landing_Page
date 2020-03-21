@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
   /* COLORS */
 
@@ -31,42 +32,43 @@
   --bold: 600;
 }
 
-body {
+body.grid {
   font-family: var(--main-font-family);
   margin: 0;
+  padding: 0;
 }
 
-header {
+.logo {
   padding: 10%;
 }
 
 h1 {
-  padding: 10% 10% 0;
-  font-size: 3rem;
+  font-size: 10vw;
   font-weight: var(--bold);
   text-align: center;
   line-height: 1.1;
   letter-spacing: 10px;
   color: var(--dark-grayish-red);
-  margin: 0;
 }
-
 h1 span {
   font-weight: var(--light);
   color: var(--desaturated-red);
 }
 
 p {
-  padding: 10%;
   text-align: center;
   line-height: 1.8;
-  font-size: 1rem;
-  margin: 0;
+  font-size: 4vw;
   color: var(--desaturated-red);
 }
 
-img.showcase {
+.body-mobile {
+  padding: 5%;
   margin: 0;
+}
+
+img.right-col {
+  display: none;
 }
 
 /* Email form */
@@ -81,20 +83,20 @@ form {
 }
 
 .email {
-  display: inline-block;
   vertical-align: middle;
   border: none;
   border-radius: 5em;
-  margin-left: 10px;
+  padding-left: 10px;
+  height: 33px;
+  width: 200px;
 }
 
 .email::placeholder {
   color: var(--desaturated-red);
-  opacity: 0.5; /*Firefox sets the opacity to a lower value by default*/
+  opacity: 0.5;
 }
 
 .email-btn {
-  display: inline-block;
   vertical-align: middle;
   height: 35px;
   width: 50px;
@@ -104,13 +106,99 @@ form {
   box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
 }
 
-/*Footer*/
+footer {
+  margin: 5% 0;
+}
+
 .attribution {
   font-weight: var(--light);
   font-size: 0.9rem;
+  padding: 0;
 }
 .attribution a {
   text-decoration: none;
   color: var(--dark-grayish-red);
   font-weight: var(--regular);
+}
+
+/*DESKTOP*/
+@media (min-width: 768px) {
+  body.grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  img.hero-mobile {
+    display: none;
+  }
+
+  img.right-col {
+    display: inline-block;
+  }
+
+  .left-col {
+    padding: 10%;
+  }
+
+  .body-mobile {
+    padding: 0;
+  }
+
+  .logo {
+    padding: 0 0 5%;
+  }
+
+  h1.body-mobile {
+    margin: 5% 0;
+    text-align: left;
+    font-size: 5vw;
+    font-weight: var(--bold);
+    line-height: 1.1;
+    letter-spacing: 10px;
+    color: var(--dark-grayish-red);
+  }
+
+  p.body-mobile {
+    margin: 5% 0;
+    padding: 0 35% 0 0;
+    line-height: 1.8;
+    font-size: 1.2vw;
+    text-align: left;
+    color: var(--desaturated-red);
+  }
+
+  /* Email form */
+  .form-container {
+    text-align: left;
+  }
+
+  form {
+    display: inline-block;
+    border: solid hsla(0, 36%, 70%, 0.5) 1px;
+    border-radius: 5em;
+  }
+
+  .email {
+    vertical-align: middle;
+    border: none;
+    border-radius: 5em;
+    padding-left: 10px;
+    height: 33px;
+    width: 200px;
+  }
+
+  .email::placeholder {
+    color: var(--desaturated-red);
+    opacity: 0.5;
+  }
+
+  .email-btn {
+    vertical-align: middle;
+    height: 35px;
+    width: 50px;
+    border-radius: 5em;
+    border: none;
+    background: var(--secondary-gradient);
+    box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
+  }
 }

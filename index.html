@@ -20,53 +20,67 @@
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-  <body>
-    <header>
+  <body class="grid">
+    <div class="left-col">
+      <!-- Logo -->
       <img src="./images/logo.svg" alt="logo-image" class="logo" width="40%" />
-    </header>
-    <img
-      src="./images/hero-mobile.jpg"
-      alt="image-of-model"
-      class="showcase"
-      width="100%"
-    />
-    <section class="main">
-      <h1>
+
+      <!-- Mobile Image (Hidden on desktop) -->
+      <img
+        src="./images/hero-mobile.jpg"
+        alt="image-of-model"
+        class="hero-mobile"
+        width="100%"
+      />
+
+      <h1 class="body-mobile">
         <span>WE'RE</span>
-        COMING SOON
+        COMING <br />
+        SOON
       </h1>
-      <p>
+
+      <p class="body-mobile">
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our
         launch deals
       </p>
-    </section>
-    <div class="form-container">
-      <form action="/" method="post">
-        <input
-          class="email"
-          type="email"
-          name="email"
-          id="email"
-          required
-          placeholder="Email Address"
-          required
-        />
-        <button type="submit" class="email-btn">
-          <img src="/images/icon-arrow.svg" alt="" />
-        </button>
-      </form>
+
+      <div class="form-container">
+        <form action="/" method="post">
+          <input
+            class="email"
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Email Address"
+            required
+          />
+
+          <button type="submit" class="email-btn">
+            <img src="/images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+      </div>
+
+      <footer>
+        <p class="attribution body-mobile">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+        </p>
+        <p class="attribution body-mobile">
+          . Coded by <a href="#">Alessandro Bruni</a>.
+        </p>
+      </footer>
     </div>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        .
-        <br />
-        Coded by <a href="#">Alessandro Bruni</a>.
-      </p>
-    </footer>
+    <!-- Desktop Image (Hidden on mobile) -->
+    <img
+      src="./images/hero-desktop.jpg"
+      alt="image-of-model"
+      class="right-col"
+      width="100%"
+    />
   </body>
 </html>
