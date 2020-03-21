@@ -68,3 +68,38 @@ p {
 img.showcase {
   margin: 0;
 }
+
+/* Email form */
+.form-container {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  border: solid hsla(0, 36%, 70%, 0.5) 1px;
+  border-radius: 5em;
+}
+
+.email {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  border-radius: 5em;
+  margin-left: 10px;
+}
+
+.email::placeholder {
+  color: var(--desaturated-red);
+  opacity: 0.5; /*Firefox sets the opacity to a lower value by default*/
+}
+
+.email-btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 35px;
+  width: 50px;
+  border-radius: 5em;
+  border: none;
+  background: var(--secondary-gradient);
+  box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
+}
