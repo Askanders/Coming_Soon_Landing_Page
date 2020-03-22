@@ -46,7 +46,7 @@
       </p>
 
       <div class="form-container">
-        <form action="/" method="post">
+        <form name="form" action="javascript:validate()" class="">
           <input
             class="email"
             type="email"
@@ -54,13 +54,14 @@
             id="email"
             required
             placeholder="Email Address"
-            required
           />
+          <img src="images/icon-error.svg" alt="" class="error-img hide" />
 
           <button type="submit" class="email-btn">
             <img src="/images/icon-arrow.svg" alt="" />
           </button>
         </form>
+        <p class="error-text hide">Please provide a valid email</p>
       </div>
 
       <footer>
@@ -69,7 +70,8 @@
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor </a
           >. <br />
-          Coded by <a href="#">Askanders</a>.
+          Coded by
+          <a href="https://github.com/Askanders" target="_blank">Askanders</a>.
         </p>
       </footer>
     </div>
@@ -80,5 +82,6 @@
       class="right-col"
       width="100%"
     />
+    <script src="/validation.js"></script>
   </body>
 </html>

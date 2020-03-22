@@ -32,6 +32,14 @@
   --bold: 600;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
 body.grid {
   font-family: var(--main-font-family);
   margin: 0;
@@ -110,6 +118,10 @@ form {
   box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
 }
 
+.email-btn:hover {
+  background: hsla(0, 36%, 70%, 0.25);
+}
+
 footer {
   margin: 5% 0;
 }
@@ -123,6 +135,27 @@ footer {
   text-decoration: none;
   color: var(--dark-grayish-red);
   font-weight: var(--regular);
+}
+
+.error {
+  border-color: var(--soft-red);
+}
+
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+}
+
+.error-img {
+  vertical-align: middle;
+}
+.error-text {
+  font-size: 0.6rem;
+  position: relative;
+  bottom: 8px;
+  color: var(--soft-red);
 }
 
 /*DESKTOP*/
@@ -200,10 +233,32 @@ footer {
     vertical-align: middle;
     height: 40px;
     width: 70px;
-    margin-left: 94.9px;
     border-radius: 5em;
     border: none;
     background: var(--secondary-gradient);
     box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
+  }
+
+  .error {
+    border-color: var(--soft-red);
+  }
+
+  .show {
+    visibility: visible;
+  }
+  .hide {
+    visibility: hidden;
+  }
+
+  .error-img {
+    vertical-align: middle;
+    margin-left: 65.9px;
+  }
+  .error-text {
+    font-size: 2vmin;
+    position: relative;
+    right: 30%;
+    bottom: 10px;
+    color: var(--soft-red);
   }
 }
