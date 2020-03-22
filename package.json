@@ -1,0 +1,25 @@
+{
+  "name": "coming_soon_landing_page",
+  "version": "1.0.0",
+  "description": "full stack personal implementation of the frontend mentor challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Askanders/Coming_Soon_Landing_Page.git"
+  },
+  "author": "Askanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Askanders/Coming_Soon_Landing_Page/issues"
+  },
+  "homepage": "https://github.com/Askanders/Coming_Soon_Landing_Page#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5"
+  }
+}

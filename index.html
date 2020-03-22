@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <title>Base Apparel</title>
   </head>
   <body class="grid">
     <div class="left-col">
@@ -48,7 +48,13 @@
       </p>
 
       <div class="form-container">
-        <form name="form" action="javascript:validate()" class="">
+        <form
+          name="form"
+          action="/"
+          method="POST"
+          class=""
+          onsubmit="return (validate())"
+        >
           <input
             class="email"
             type="email"
@@ -68,8 +74,8 @@
       </div>
 
       <footer>
-        <p class="attribution body-mobile">
-          Challenge by
+        <p class="attribution">
+          Design by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor </a
           >. <br />
