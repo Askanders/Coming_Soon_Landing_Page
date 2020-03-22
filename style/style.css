@@ -5,8 +5,6 @@
   /* Primary */
   --soft-red: hsl(0, 93%, 68%);
   --desaturated-red: hsl(0, 36%, 70%);
-
-  /* Neutral */
   --dark-grayish-red: hsl(0, 6%, 24%);
 
   /* Gradients */
@@ -21,7 +19,7 @@
     hsl(0, 74%, 74%)
   );
 
-  /* FONTS */
+  /* ------ */
 
   /* Font Family */
   --main-font-family: "Josefin Sans", sans-serif;
@@ -32,16 +30,27 @@
   --bold: 600;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
-  box-shadow: 0 0 0 30px white inset !important;
+/* MOBILE */
+
+/* Utility */
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+}
+/* ------- */
+
+/*  */
+
+/* Main Body */
+img.right-col {
+  display: none;
 }
 
 body.grid {
   font-family: var(--main-font-family);
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -53,39 +62,30 @@ body.grid {
 h1 {
   font-size: 10vw;
   font-weight: var(--bold);
-  text-align: center;
   line-height: 1.1;
   letter-spacing: 10px;
   color: var(--dark-grayish-red);
 }
+
 h1 span {
   font-weight: var(--light);
   color: var(--desaturated-red);
 }
 
 p {
-  text-align: center;
+  padding: 5%;
   line-height: 1.8;
   font-size: 4vw;
   color: var(--desaturated-red);
 }
+/* --------- */
 
-.body-mobile {
-  padding: 5%;
-  margin: 0;
-}
+/*  */
 
-img.right-col {
-  display: none;
-}
-
-/* Email form */
+/* Form */
 input:focus {
   outline: none;
-}
-
-.form-container {
-  text-align: center;
+  box-shadow: 0 0 0 30px white inset;
 }
 
 form {
@@ -119,9 +119,13 @@ form {
 }
 
 .email-btn:hover {
-  background: hsla(0, 36%, 70%, 0.25);
+  background: hsla(0, 36%, 70%, 0.28);
 }
+/* ---- */
 
+/*  */
+
+/* Footer */
 footer {
   margin: 5% 0;
 }
@@ -131,40 +135,50 @@ footer {
   font-size: 0.9rem;
   padding: 0;
 }
+
 .attribution a {
   text-decoration: none;
   color: var(--dark-grayish-red);
   font-weight: var(--regular);
 }
+/* ------ */
 
-.error {
+/*  */
+
+/* Error Messages */
+.error-form {
   border-color: var(--soft-red);
-}
-
-.show {
-  visibility: visible;
-}
-.hide {
-  visibility: hidden;
 }
 
 .error-img {
   vertical-align: middle;
 }
+
 .error-text {
   font-size: 0.6rem;
   position: relative;
   bottom: 8px;
   color: var(--soft-red);
 }
+/* -------------- */
+
+/*  */
+
+/*  */
+
+/*  */
 
 /*DESKTOP*/
+
 @media (min-width: 768px) {
+  /* Main Body */
   body.grid {
+    text-align: left;
     display: grid;
     grid-template-columns: 60% 40%;
   }
 
+  /* Switch Images */
   img.hero-mobile {
     display: none;
   }
@@ -172,93 +186,52 @@ footer {
   img.right-col {
     display: inline-block;
   }
+  /* ------------- */
 
   .left-col {
     padding: 10%;
-  }
-
-  .body-mobile {
-    padding: 0;
   }
 
   .logo {
     padding: 0 0 5%;
   }
 
-  h1.body-mobile {
+  h1 {
     margin: 5% 0;
-    text-align: left;
-    font-weight: var(--bold);
     font-size: 4vw;
-    line-height: 1.1;
-    letter-spacing: 10px;
-    color: var(--dark-grayish-red);
   }
 
-  p.body-mobile {
+  p {
     margin: 5% 0;
     padding: 0 35% 0 0;
-    line-height: 1.8;
     font-size: 1.2vw;
-    text-align: left;
-    color: var(--desaturated-red);
   }
+  /* --------- */
 
-  /* Email form */
-  .form-container {
-    text-align: left;
-  }
+  /*  */
 
+  /* Form */
   form {
-    display: inline-block;
-    border: solid hsla(0, 36%, 70%, 0.5) 1px;
-    border-radius: 5em;
     width: 380px;
   }
 
-  .email {
-    vertical-align: middle;
-    border: none;
-    border-radius: 5em;
-    padding-left: 10px;
-    height: 33px;
-    width: 200px;
-  }
-
-  .email::placeholder {
-    color: var(--desaturated-red);
-    opacity: 0.5;
-  }
   .email-btn {
-    vertical-align: middle;
     height: 40px;
     width: 70px;
-    border-radius: 5em;
-    border: none;
-    background: var(--secondary-gradient);
-    box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
   }
+  /* ---- */
 
-  .error {
-    border-color: var(--soft-red);
-  }
+  /*  */
 
-  .show {
-    visibility: visible;
-  }
-  .hide {
-    visibility: hidden;
-  }
-
+  /* Error Messages */
   .error-img {
-    vertical-align: middle;
     margin-left: 65.9px;
   }
+
   .error-text {
     font-size: 2vmin;
-    position: relative;
-    right: 30%;
-    bottom: 10px;
-    color: var(--soft-red);
+    left: 10px;
+    bottom: 20px;
   }
+  /* -------------- */
 }
