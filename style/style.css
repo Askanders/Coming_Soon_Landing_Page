@@ -90,17 +90,19 @@ input:focus {
 
 form {
   display: inline-block;
-  border: solid hsla(0, 36%, 70%, 0.5) 1px;
+  position: relative;
   border-radius: 5em;
+  width: 65vmin;
 }
 
 .email {
-  vertical-align: middle;
-  border: none;
+  position: absolute;
+  left: 0;
+  border: solid hsla(0, 36%, 70%, 0.5) 1px;
   border-radius: 5em;
-  padding-left: 10px;
-  height: 33px;
-  width: 200px;
+  height: 30px;
+  width: 60vmin;
+  padding: 0 0 0 2vmin;
 }
 
 .email::placeholder {
@@ -109,9 +111,10 @@ form {
 }
 
 .email-btn {
-  vertical-align: middle;
-  height: 35px;
-  width: 50px;
+  position: absolute;
+  right: 0;
+  height: 32px;
+  width: 12vmin;
   border-radius: 5em;
   border: none;
   background: var(--secondary-gradient);
@@ -122,6 +125,28 @@ form {
   background: hsla(0, 36%, 70%, 0.28);
 }
 /* ---- */
+
+/*  */
+
+/* Error Messages */
+.error-form {
+  border-color: var(--soft-red);
+}
+
+.error-img {
+  position: absolute;
+  right: 12.5vmin;
+  top: 6%;
+}
+
+.error-text {
+  position: absolute;
+  top: 10px;
+  bottom: 8px;
+  font-size: 0.8rem;
+  color: var(--soft-red);
+}
+/* -------------- */
 
 /*  */
 
@@ -142,25 +167,6 @@ footer {
   font-weight: var(--regular);
 }
 /* ------ */
-
-/*  */
-
-/* Error Messages */
-.error-form {
-  border-color: var(--soft-red);
-}
-
-.error-img {
-  vertical-align: middle;
-}
-
-.error-text {
-  font-size: 0.6rem;
-  position: relative;
-  bottom: 8px;
-  color: var(--soft-red);
-}
-/* -------------- */
 
 /*  */
 
@@ -210,28 +216,9 @@ footer {
 
   /*  */
 
-  /* Form */
-  form {
-    width: 380px;
-  }
-
-  .email-btn {
-    height: 40px;
-    width: 70px;
-  }
-  /* ---- */
-
-  /*  */
-
   /* Error Messages */
-  .error-img {
-    margin-left: 65.9px;
-  }
-
   .error-text {
-    font-size: 2vmin;
     left: 10px;
-    bottom: 20px;
   }
   /* -------------- */
 }
