@@ -118,11 +118,11 @@ form {
   border-radius: 5em;
   border: none;
   background: var(--secondary-gradient);
-  box-shadow: 2px 4px 15px hsla(0, 36%, 70%, 0.3);
+  box-shadow: 2px 4px 15px hsl(0, 36%, 70%);
 }
 
 .email-btn:hover {
-  background: hsla(0, 36%, 70%, 0.28);
+  background: hsl(0, 60%, 90%);
 }
 /* ---- */
 
